@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Zap, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,9 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="p-2 bg-brand-teal rounded-lg">
-                <Zap className="h-5 w-5 text-white" />
-              </div>
+              <img 
+                src="/lovable-uploads/96d1c634-0ef5-47cb-bb59-30bbd7e2ad5a.png" 
+                alt="DigitalGrow Logo" 
+                className="h-8 w-auto"
+              />
               <span className="text-xl font-bold">DigitalGrow</span>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">

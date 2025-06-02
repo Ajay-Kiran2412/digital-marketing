@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,8 +24,12 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-2 bg-brand-teal rounded-lg group-hover:scale-110 transition-transform duration-300">
-              <Zap className="h-6 w-6 text-white" />
+            <div className="group-hover:scale-110 transition-transform duration-300">
+              <img 
+                src="/lovable-uploads/96d1c634-0ef5-47cb-bb59-30bbd7e2ad5a.png" 
+                alt="DigitalGrow Logo" 
+                className="h-10 w-auto"
+              />
             </div>
             <span className="text-xl font-bold text-brand-navy">DigitalGrow</span>
           </Link>
